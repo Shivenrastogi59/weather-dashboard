@@ -1,0 +1,18 @@
+{
+  "name": "weather-dashboard",
+  "version": "1.0.0",
+  "description": "A weather app where you can find the current weather of any city, with temperature and humidity.  \r Tech Stack: React, Node & Express  \r Weather Api Platform : OpenWeatherMap  \r ![Preview](./image_preview.png)",
+  "main": "index.js",
+  "scripts": {
+  "install-all": "npm install --prefix client && npm install --prefix server",
+  "start": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "npm start --prefix server",
+  "client": "npm start --prefix client"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
