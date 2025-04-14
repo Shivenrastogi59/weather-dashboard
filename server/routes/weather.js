@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
   const city = req.query.city;
-  const apiKey = '85f1fd68d93d4ecde3e35d9830ec7a89'; // hardcoded your key here
+  const apiKey = 'db2b654cd523fd386cd26a7da44a62dc'; // hardcoded your key here
 
   if (!city) {
     return res.status(400).json({ error: 'City parameter is required' });

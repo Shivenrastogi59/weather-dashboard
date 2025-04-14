@@ -13,7 +13,9 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.get(`https://weather-server-1ent.onrender.com`);
+      const res = await axios.get(`https://weather-server-1ent.onrender.com/weather`, {
+        params: { city }
+      });
       setWeather(res.data);
     } catch (err) {
       setError('Could not fetch weather. Try another city.');
